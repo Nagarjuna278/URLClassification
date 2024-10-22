@@ -1,0 +1,6 @@
+torch
+Transformers
+pandas
+scikit-learn
+numpy
+dnspython
