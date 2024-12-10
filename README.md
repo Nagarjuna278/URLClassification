@@ -1,6 +1,6 @@
 Here's a README file explaining the project for GitHub:
 
-# URL Classification using RoBERTa
+# URL Classification using RoBERTa - CNN
 
 ## Project Overview
 
@@ -32,6 +32,7 @@ The project consists of three main scripts:
 - scikit-learn
 - numpy
 - dnspython
+- torch
 
 ## Installation
 
