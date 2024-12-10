@@ -4,7 +4,7 @@ Here's a README file explaining the project for GitHub:
 
 ## Project Overview
 
-This project implements a URL classification system using BERT (Bidirectional Encoder Representations from Transformers) to categorize URLs into four classes: benign, defacement, malware, and phishing. The system processes URLs, extracts features, and uses a BERT-based model for classification.
+This project implements a URL classification system using Roberta-CNN to categorize URLs into four classes: benign, defacement, malware, and phishing. The system processes URLs, extracts features, and uses a BERT-based model for classification.
 
 ## Components
 
@@ -12,7 +12,7 @@ The project consists of three main scripts:
 
 1. `ThreadingIPNSextaract.py`: Extracts features from URLs, including IP addresses and nameservers.
 2. `URLfeatureRanking.py`: Performs additional feature engineering on the extracted URL data.
-3. `RobertaMP.py`: Implements the BERT-based classifier for URL classification.
+3. `RobertaMP.py`: Implements the RobertaCNN classifier for URL classification.
 
 ## Features
 
