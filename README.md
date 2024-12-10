@@ -1,6 +1,6 @@
 Here's a README file explaining the project for GitHub:
 
-# URL Classification using BERT
+# URL Classification using RoBERTa
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ The project consists of three main scripts:
 
 1. `ThreadingIPNSextaract.py`: Extracts features from URLs, including IP addresses and nameservers.
 2. `URLfeatureRanking.py`: Performs additional feature engineering on the extracted URL data.
-3. `URLclassifier.py`: Implements the BERT-based classifier for URL classification.
+3. `RobertaMP.py`: Implements the BERT-based classifier for URL classification.
 
 ## Features
 
@@ -60,14 +60,20 @@ The project consists of three main scripts:
    python URLfeatureRanking.py
    ```
 
-4. Train and evaluate the BERT classifier:
+4. Train and evaluate the RoBERTaCNN classifier
+   a) For training on GPUs:
    ```
-   python URLclassifier.py
+   python RobertaMP.py
+   ```
+
+   b) For training on CPU:
+   ```
+   python RobertaClassifier.py
    ```
 
 ## Model
 
-The project uses a pre-trained BERT model (`bert-base-uncased`) fine-tuned for URL classification. The model is trained on a balanced dataset of URLs with four classes: benign, defacement, malware, and phishing.
+The project implements RoBERTa-CNN framework,a novel machine learning solution combining RoBERTa's contextual understanding with CNNs' pattern extraction capabilities to classify URLs as benign, phishing, malware, or defacement.
 
 ## Performance
 
@@ -75,7 +81,7 @@ The model's performance is evaluated using accuracy and a classification report,
 
 ## Saving and Loading the Model
 
-The trained model is automatically saved to the `bert_url_classifier` directory. You can load the saved model for future use or deployment.
+The trained model is automatically saved to the `robertaCNN_url_classifier` directory. You can load the saved model for future use or deployment.
 
 ## Contributing
 
